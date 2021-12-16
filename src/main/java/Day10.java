@@ -17,7 +17,7 @@ public class Day10 {
                         case '[' -> ']';
                         case '{' -> '}';
                         case '<' -> '>';
-                        default -> bracketStack.pop();
+                        default -> expected;
                     };
                     if (data[i] != expected) {
                         result += switch (data[i]) {
